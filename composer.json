@@ -29,8 +29,6 @@
         "phpspec/phpspec": "^7.2",
         "behat/behat": "^3.6.1",
         "behat/mink-selenium2-driver": "^1.4",
-        "behat/mink": "^1.7",
-        "behat/mink-browserkit-driver": "^1.3",
         "friends-of-behat/mink": "^1.8",
         "friends-of-behat/mink-browserkit-driver": "^1.4",
         "friends-of-behat/mink-debug-extension": "^2.0.0",
@@ -51,9 +49,11 @@
         "symfony/flex": "^2.4",
         "symfony/intl": "^5.4 || ^6.4",
         "symfony/web-profiler-bundle": "^5.4 || ^6.4",
+        "symfony/mailer": "^5.4 || ^6.0",
         "league/flysystem-bundle": "2.4.0",
         "sylius/mailer-bundle":  "^1.8 || ^2.0@beta",
-        "matthiasnoback/symfony-config-test": "^4.3"
+        "matthiasnoback/symfony-config-test": "^4.3",
+        "vimeo/psalm": "4.27.0"
     },
     "conflict": {
         "behat/mink-selenium2-driver": ">=1.7.0"
@@ -75,6 +75,11 @@
             "symfony/flex": false,
             "dealerdirect/phpcodesniffer-composer-installer": false,
             "phpstan/extension-installer": false
+        }
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": "true"
         }
     },
     "scripts": {
